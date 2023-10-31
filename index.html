@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Todolist</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>Todolist</header>
+            <div class="inputField">
+                <input type="text" id="addValue" placeholder="할 일을 작성해주세요" autofocus>
+                <button type="button" id="addBtn" onclick="addTodo()">
+                    <!-- <i class="xi-plus xi-2x"></i> -->
+                    X
+                </button>
+            </div>
+            <div>
+                <ul id="addTodo" class="list">
+                    <li><div id="result"></div></li>
+                </ul>
+            </div>
+            <div class="footerSec">
+                <button type="button" id="allClear" onclick="allClearList()">모두 삭제</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
